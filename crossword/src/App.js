@@ -22,7 +22,7 @@ class Grid extends Component {
 	render() {
 		var rows = [];
 		for(var i =0; i< props.rows; i++) {
-			rows.push(<Row elements = ""
+			rows.push(<Row elements = this.state.elements[i]
 										 size = props.cols>);
 		}
 		return(
