@@ -20,16 +20,23 @@ class App extends Component {
 
 class Grid extends Component {
 	render() {
+		var rows = [];
+		for(var i =0; i< props.rows; i++) {
+			rows.push(<Row elements = ""
+										 size = props.cols>);
+		}
 		return(
 			<div>
 				<table id = "puzzleGrid">
 					<tbody>
-						//loop that makes rows
+						{rows}
 					</tbody>
 				</table>
+			</div>
 		)
 	}
 }
+//parameters elements, size
 class Row extends Component {
 	render() {
 		return (
