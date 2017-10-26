@@ -18,4 +18,26 @@ class App extends Component {
   }
 }
 
+class Grid extends Component {
+	render() {
+		return(
+			<div>
+				<table id = "puzzleGrid">
+					<tbody>
+						//loop that makes rows
+					</tbody>
+				</table>
+		)
+	}
+}
+class Row extends Component {
+	render() {
+		return (
+			<tr>
+				//loop that makes elements
+			</tr>
+		)
+	}
+}
+
 export default App;
